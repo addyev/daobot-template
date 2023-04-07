@@ -192,3 +192,5 @@ To test run:
 ```bash
 cargo test --package status-message -- --nocapture
 ```
+
+## Deploy to heroku
