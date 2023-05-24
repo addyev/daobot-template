@@ -60,6 +60,7 @@ const App = ({ contract, currentUser, nearConfig, wallet, nearApi }) => {
     );
   };
 
+  // Register Croncat
   const registerCroncat = async () => {
     if (!dao) { alert("Please enter a dao address"); return; }
     const croncatContract = await new nearApi.Contract(wallet.account(), "manager_v1.croncat.testnet", {
