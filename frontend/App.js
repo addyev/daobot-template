@@ -33,6 +33,7 @@ const App = ({ contract, currentUser, nearConfig, wallet, nearApi }) => {
     }
   }, [dao, nft]);
 
+  // Register dao bot
   const registerDaoBotWithDao = async () => {
     if (!dao) { alert("Please enter a dao address"); return; }
     const daocontract = await new nearApi.Contract(wallet.account(), dao, {
