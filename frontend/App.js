@@ -114,6 +114,8 @@ const App = ({ contract, currentUser, nearConfig, wallet, nearApi }) => {
     </main>
   );
 };
+       
+       // props
 
 App.propTypes = {
   contract: PropTypes.shape({
